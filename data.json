@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "icon": "path/to/john-icon.png",
+      "project": {
+        "total_estimated_time": "160h",
+        "total_working_time": "40h",
+        "tasks": [
+          {
+            "task_id": "TS-23",
+            "task_name": "Setup React Project",
+            "estimated_hour": "8h",
+            "remaining_hour": "2h"
+          },
+          {
+            "task_id": "TS-40",
+            "task_name": "Implement Authentication",
+            "estimated_hour": "8h",
+            "remaining_hour": "5h"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jane Smith",
+      "icon": "path/to/jane-icon.png",
+      "project": {
+        "total_estimated_time": "200h",
+        "total_working_time": "60h",
+        "tasks": [
+          {
+            "task_id": "TS-45",
+            "task_name": "Create UI Components",
+            "estimated_hour": "8h",
+            "remaining_hour": "3h"
+          },
+          {
+            "task_id": "TS-50",
+            "task_name": "Integrate Redux",
+            "estimated_hour": "8h",
+            "remaining_hour": "4h"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Alice Johnson",
+      "icon": "path/to/alice-icon.png",
+      "project": {
+        "total_estimated_time": "180h",
+        "total_working_time": "55h",
+        "tasks": [
+          {
+            "task_id": "TS-55",
+            "task_name": "Setup Testing Environment",
+            "estimated_hour": "8h",
+            "remaining_hour": "2h"
+          },
+          {
+            "task_id": "TS-60",
+            "task_name": "Write Unit Tests",
+            "estimated_hour": "8h",
+            "remaining_hour": "6h"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bob Brown",
+      "icon": "path/to/bob-icon.png",
+      "project": {
+        "total_estimated_time": "220h",
+        "total_working_time": "80h",
+        "tasks": [
+          {
+            "task_id": "TS-65",
+            "task_name": "Optimize Performance",
+            "estimated_hour": "8h",
+            "remaining_hour": "1h"
+          },
+          {
+            "task_id": "TS-70",
+            "task_name": "Fix Bugs",
+            "estimated_hour": "8h",
+            "remaining_hour": "7h"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Charlie Davis",
+      "icon": "path/to/charlie-icon.png",
+      "project": {
+        "total_estimated_time": "240h",
+        "total_working_time": "90h",
+        "tasks": [
+          {
+            "task_id": "TS-75",
+            "task_name": "Deploy Application",
+            "estimated_hour": "8h",
+            "remaining_hour": "4h"
+          },
+          {
+            "task_id": "TS-80",
+            "task_name": "Monitor Performance",
+            "estimated_hour": "8h",
+            "remaining_hour": "3h"
+          }
+        ]
+      }
+    }
+  ]
+}

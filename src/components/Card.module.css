@@ -1,0 +1,23 @@
+.task {
+  width: 18.75em;
+  border: solid 0.188em #dcdcdc;
+  border-radius: 0.625em;
+  padding: 0 0.625em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0.6em;
+}
+
+.task_info {
+  font-size: 1em;
+}
+
+.task_times {
+  font-size: 0.875em;
+}
+
+.task:hover {
+  cursor: grab;
+  scale: 1.02;
+}
