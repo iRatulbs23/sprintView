@@ -1,18 +1,12 @@
-import Button from "./components/Button";
+import TaskForm from "./components/TaskForm";
 import Card from "./components/Card";
-import TaskColumn from "./components/TaskColumn";
+import TaskManager from "./components/TaskManager";
+
 function App() {
   return (
     <>
       <div>
-        <Card
-          name="Create a product details page"
-          id="TS - 40"
-          estimatedHour={8}
-          remainingHour={4}
-        />
-        <Button />
-        <TaskColumn />
+        <TaskManager />
       </div>
     </>
   );

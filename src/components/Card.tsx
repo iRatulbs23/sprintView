@@ -1,18 +1,13 @@
 import styles from "./Card.module.css";
+import CardButton from "./CardButton";
 
 interface CardProps {
   name: string;
   id: string;
-  estimatedHour: number;
   remainingHour: number;
 }
 
-const Card: React.FC<CardProps> = ({
-  name,
-  id,
-  estimatedHour,
-  remainingHour,
-}) => {
+const Card: React.FC<CardProps> = ({ name, id, remainingHour }) => {
   const truncateText = (text: string, length: number) => {
     if (text.length > length) {
       return text.substring(0, length) + "...";
@@ -29,8 +24,15 @@ const Card: React.FC<CardProps> = ({
         <p className="task-id">{id}</p>
       </div>
       <div className={styles.task_times}>
-        <p>Estimated Hour: {estimatedHour}h</p>
-        <p>Remaining Hour: {remainingHour}h</p>
+        {/* <p>Estimated Hour: {estimatedHour}h</p> */}
+        <p>
+          Remaining Hour: <b>{remainingHour}h</b>
+        </p>
+        <div className={styles.task_buttons}>
+          <CardButton text="+ Spent" />
+          <CardButton text="+ Remaining" />
+          <CardButton text="Add" color={true} />
+        </div>
       </div>
     </div>
   );
