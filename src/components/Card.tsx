@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from "react";
 import styles from "./Card.module.css";
 import CardButton from "./CardButton";
 
@@ -15,6 +16,7 @@ const Card: React.FC<CardProps> = ({ name, id, remainingHour }) => {
     return text;
   };
   const truncatedName = truncateText(name, 22);
+  const handleRemainingHour = () => {};
   return (
     <div className={styles.task}>
       <div className={styles.task_info}>
@@ -24,13 +26,12 @@ const Card: React.FC<CardProps> = ({ name, id, remainingHour }) => {
         <p className="task-id">{id}</p>
       </div>
       <div className={styles.task_times}>
-        {/* <p>Estimated Hour: {estimatedHour}h</p> */}
-        <p>
+        <p className={styles.remainingHour}>
           Remaining Hour: <b>{remainingHour}h</b>
         </p>
         <div className={styles.task_buttons}>
           <CardButton text="+ Spent" />
-          <CardButton text="+ Remaining" />
+          <CardButton text="+ Remaining" onClick={handleRemainingHour} />
           <CardButton text="Add" color={true} />
         </div>
       </div>
